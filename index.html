@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nenem Te amo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .note__text {
+            font-size: 20px; /* Aumenta o tamanho da fonte para facilitar a leitura */
+            line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+            color: #333; /* Cor da fonte mais escura para melhorar o contraste */
+            background-color: rgba(255, 255, 255, 0.9); /* Fundo branco levemente opaco */
+            padding: 15px; /* Espaçamento interno */
+            border-radius: 10px; /* Bordas arredondadas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+            margin-bottom: 10px; /* Espaçamento entre os "papéis" */
+        }
+    </style>
+</head>
+<svg id="hearts" viewBox="-600 -400 1200 800" preserveAspectRatio="xMidYMid slice">
+    <defs>
+        <symbol id="heart" viewBox="-69 -16 138 138">
+            <path d="M0,12
+                    C 50,-30 110,50  0,120
+                    C-110,50 -50,-30 0,12z"/>
+        </symbol>
+    </defs>
+</svg>
+
+<body class="scissors">
+    <div class="envelop">
+        <div class="envelop__front-paper"></div>
+        <div class="envelop__back-paper"></div>
+        <div class="envelop__up-paper js-up-paper"></div>
+        <div class="envelop__sticker js-sticker" id="clickableSticker"></div> <!-- ID adicionado -->
+        <div class="envelop__false-sticker"></div>
+        <div class="envelop__content js-envelop-content">
+            <div class="love-notes">
+                <div class="note js-note">
+                    <div class="note__text">
+                        <p>Oi Vida! Queria por meio dessa carta te dar esse presente aceitas? É uma coisa meio boba e simples mas queria muito fazer para você kkk</p>
+                    </div>
+                </div>
+                <div class="note js-note">
+                    <div class="note__text">
+                        <p>Que você goste e entenda o que estou te dizendo, não sou bom com palavras mas isso é do coração.</p>
+                    </div>
+                </div>
+                <div class="note js-note">
+                    <div class="note__text">
+                        <p>Obrigado por me aguentar nos dias ruins e compartilhar as risadas nos dias bons. Eu Te amo muito, muito mesmo! &hearts;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- Atualizado o caminho para o arquivo texto -->
+    <button id="redirectButton" onclick="window.location.href='../texto/Julia.html';">Depois de abrir clique aqui</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var sticker = document.getElementById('clickableSticker');
+
+            if (sticker) {
+                sticker.addEventListener('click', function() {
+                    // Coloque aqui a lógica para o corte com a tesoura
+                    console.log("Papelzinho foi cortado!"); // Apenas para teste, substitua pela animação real
+                    // Aqui você pode chamar a função ou lógica já existente que faz o corte com a tesoura
+                });
+            }
+        });
+    </script>
+</body>
+</html>

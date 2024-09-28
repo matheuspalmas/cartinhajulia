@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINHA PRINCESA</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+        }
+        .full-height {
+            height: 100vh;
+        }
+        .image-container img {
+            width: 80%;
+            height: auto;
+        }
+        .message-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .audio-container {
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            position: absolute;
+            top: -10000px;
+            left: -10000px;
+        }
+        .play-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 18%;
+        }
+        .heart-button {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            transform: rotate(-45deg);
+            cursor: pointer;
+            animation: pulse 1s infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        }
+        .heart-button::before,
+        .heart-button::after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            z-index: -1;
+        }
+        .heart-button::before {
+            top: -50px;
+            left: 0;
+        }
+        .heart-button::after {
+            top: 0;
+            left: 50px;
+        }
+        .heart-button img {
+            transform: rotate(45deg);
+            width: 40px;
+            height: auto;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1) rotate(-45deg);
+            }
+            50% {
+                transform: scale(1.1) rotate(-45deg);
+            }
+            100% {
+                transform: scale(1) rotate(-45deg);
+            }
+        }
+        .particle {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            transform: rotate(-45deg);
+            animation: particle-animation 1s linear forwards;
+        }
+        .particle::before,
+        .particle::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .particle::before {
+            top: -10px;
+            left: 0;
+        }
+        .particle::after {
+            top: 0;
+            left: 10px;
+        }
+        @keyframes particle-animation {
+            to {
+                transform: translateY(-50px) scale(0);
+                opacity: 0;
+            }
+        }
+        .message {
+            display: none;
+            font-size: 18px;
+            white-space: pre-wrap;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: justify;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            overflow-y: auto;
+            background-color: #2200ffc4;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .hide {
+            display: none;
+        }
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: url('planodifundo.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    #image {
+        border: 5px solid transparent; /* Borda transparente */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+        border-radius: 15px; /* Bordas arredondadas (opcional) */
+    }
+    </style>
+</head>
+<body>
+    <div class="container-fluid full-height">
+        <div class="row full-height">
+            <div class="col-md-6 d-flex align-items-center justify-content-center image-container">
+                <img id="image" src="meuamor.jpg" alt="Montagem de Fotos">
+            </div>
+            <div class="col-md-6 message-container">
+                <div id="messageContent">
+                    <h1>Eu te amo minha Ruivinha!</h1>
+                    <p>Que nosso amor continue crescendo a cada dia. Amo você!</p>
+                    <div class="play-button">
+                        <div id="playAudio" class="heart-button">
+                            <img src="tap.png" alt="Tap">
+                        </div>
+                    </div>
+                </div>
+                <div id="typedText" class="message">
+                    Jupter kkkk,<br><br>
+                    Bom Julia, estou vindo aqui por meio das minhas palavras para te dizer tudo sabe? Tudo o que estou sentindo nesses 18 dias de conversa kkkk (que já parecem meses). Primeiramente queria começar falando que entendo o seu medo sabe, o seu medo em relação a nós, não irei mentir também tenho esse medo mas na maior parte do tempo eu tento não pensar nisso porque se eu pensar muito acabo me atolando nesse sentimento de tristeza e isso não é bom sabe, então essa é a única parte aqui do texto que quero falar isso porque não que isso não seja do meu coração mas é que o que vai vir é realmente lá do fundo e quero que você acredite nas minhas palavras.<br><br>
+                    Julia, você em menos de 3 semanas mudou minha vida do avesso e eu estou falando isso no sentido bom. Julia, eu nunca tive alguém para dividir minhas coisas igual estou tendo você sabe. Você pode vir com o papo que for no sentido de eu não ter aproveitado a vida direito ainda e não ter encontrado uma pessoa, mas tem um ponto nessa frase que você está totalmente errada, que é de eu não ter encontrado uma pessoa certa porque eu encontrei, e é você, sim você mesma, Julia de Souza Crivellaro (futura Julia Crivellaro Palmas qui tesauuuu).<br><br>
+                    Meu amor, você é tudo o que eu pedia para Deus. Você é bonita, você é gostosa, você é muito inteligente, você tem um coração gigantesco sabe, você tem um humor perfeito, você me escuta, você me dá conselhos, você puxa assunto vida. Não sou só eu falando sabe, e isso foi desde nossa primeira conversa, amor. Nós nos encaixamos de uma maneira que eu nunca senti isso, e eu fico muito feliz por estar sentindo isso com você e por estar fazendo um monte de coisas pela primeira vez com você, vida, porque eu confio em você, eu quero te ter, eu quero te sentir a todo momento minha vida e é isso que eu quero que você saiba.<br><br>
+                    Julia eu te amo (imagino a sua cara tipo "ai não me ama" ou a figurinha da velha jogando o pão ou do bichinho gritando). Sim, Julia, eu te amo muito vida. Meu dia começa com o seu bom dia, eu vou dormir todo dia esperando dar a hora no dia seguinte de te dar bom dia e começarmos a conversar sabe, a todo momento eu penso em você e eu penso que quero um futuro com você sabe, eu quero e eu vou fazer o impossível para isso acontecer minha vida porque se tem uma coisa que eu tenho certeza na minha vida é que eu não te encontrei por um acaso. Deus me mandou esse sinal e eu estou e vou fazer de tudo para que daqui 40 anos estejamos falando dessa história para nossos netinhos.<br><br>
+                    Eu só quero que saiba que eu sei que você está fazendo o possível sabe para que nós possamos nos ver, indo contra sua mãe, contra suas amigas, sabe, mas eu tenho fé que daqui umas semanas eu estarei conversando numa boa com elas kkkkk porque eu quero fazer isso por você. Eu amo te tratar como uma princesa, sabe, porque é o que você merece. Você é uma mulher forte por tudo o que já te aconteceu (pelo menos das coisas que nós falamos) e olhar para você e estar sempre com um sorriso, sabe? Foi esse sorriso que me apaixonei por você, foi pelo seu jeito de me tratar e me fazer ser feliz, coisa que eu não sentia e não era faz um tempo. Eu me apaixonei pelo o que você tem por dentro, pelo seu coração que estou conseguindo entrar de pouquinho em pouquinho. O que você tem por fora foi só um detalhe no sentido de eu olhar para a Julia primeiro, depois eu olhar para como ela é fisicamente, que a princípio é uma grande gostosa, tá?<br><br>
+                    Cada dia que passa eu aprendo mais com você e melhoro mais POR VOCÊ. Eu não sou perfeito e tenho vários defeitos, mas saiba que estou melhorando para você. Amo te tratar do jeito que você merece e vou fazer isso pelo resto da minha vida, amo seu cabelo, amo seus olhos verdes (isso aqui é putaria, tá?), amo beijar essa sua boquinha, amo responder suas perguntas, amo ouvir como está sendo o seu dia, amo poder falar para você como foi meu dia, amo poder partilhar meus sentimentos e segredos com você. EU TE AMO POR COMPLETO PORRA.<br><br>
+                    Sei que não gosta que eu te chame de Julia kkkk mas, meu amor, fiz esse pequeno e simbólico presente para tentar te falar tudo que eu sinto em relação quando escuto o nome Julia, Julia é o amor da minha vida e vai ser para sempre bom e como diz essa música né É VOCÊ, É SEMPRE VOCÊ. EU TI NHAMU DIMAIS<br><br>
+                    Você me ensinou a dar significado para a palavra VIDA e está me ensinando a dar significado a palavra AMOR, porque é só isso que vem na mente quando penso em você, amor e um lar que posso ficar. &hearts; 
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="audioPlayer" autoplay loop>
+        <source src="audio/musicafavjulia.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script>
+        window.onload = function() {
+            // Referência ao botão e ao player de áudio
+            var playButton = document.getElementById("playAudio");
+            var audioPlayer = document.getElementById("audioPlayer");
+
+            // Verifique se os elementos foram encontrados
+            if (playButton && audioPlayer) {
+                playButton.addEventListener("click", function() {
+                    audioPlayer.play();  // Inicia a reprodução do áudio
+                    playButton.classList.add("hide");  // Esconde o botão de "Play"
+                    document.getElementById("typedText").classList.remove("hide");  // Mostra o texto
+                    document.getElementById("typedText").style.display = "block";
+                    document.getElementById("messageContent").classList.add("hide");  // Esconde a mensagem inicial
+                });
+            } else {
+                console.error("Elementos não encontrados: verifique o ID do botão e do áudio.");
+            }
+
+            // Ajusta a altura da div de mensagem para igualar à altura da imagem
+            var imageHeight = document.getElementById("image").clientHeight;
+            document.getElementById("typedText").style.maxHeight = imageHeight + "px";
+        };
+
+        // Efeito de partículas ao mover o mouse
+        document.addEventListener('mousemove', function(e) {
+            var particle = document.createElement('div');
+            particle.classList.add('particle');
+            particle.style.left = e.pageX + 'px';
+            particle.style.top = e.pageY + 'px';
+            document.body.appendChild(particle);
+
+            setTimeout(function() {
+                particle.remove();
+            }, 1000);
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
